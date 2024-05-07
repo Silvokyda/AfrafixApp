@@ -25,3 +25,5 @@ const LogisticData = [
     imgSource: "https://bammtours.co.ke/wp-content/uploads/2021/03/Limousine-for-hire-Nairobi-Kenya-1024x766.jpg"
   }
 ]
+
+export default LogisticData;

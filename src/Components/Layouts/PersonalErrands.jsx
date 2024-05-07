@@ -8,7 +8,7 @@ import { useRef } from "react";
 import Slider from "react-slick";
 import Button from "react-bootstrap/Button";
 
-function PersonalServices() {
+function PersonalErrands() {
   let sliderRef = useRef(null);
   const play = () => {
     sliderRef.slickPlay();
@@ -54,7 +54,7 @@ function PersonalServices() {
               <Col key={index}>
                 <div className="card mt-5 mx-2 mx-lg-3 border-0 card1">
                   <img
-                    className="card-img-top p-1 img-fluid"
+                    className="card-img-top p-1 img-fluid rounded img-thumbnail img-width"
                     src={item.imgSource}
                     alt="card image"
                   />
@@ -75,4 +75,4 @@ function PersonalServices() {
   );
 }
 
-export default PersonalServices;
+export default PersonalErrands;

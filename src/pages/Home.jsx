@@ -1,8 +1,9 @@
 import React from "react";
 import Hero from "../Components/Layouts/Hero";
 import HomeAbout from "../Components/Layouts/HomeAbout";
-import PersonalServices from "../Components/Layouts/PersonalServices";
+import PersonalErrands from "../Components/Layouts/PersonalErrands";
 import OfficeErrands from "../Components/Layouts/OfficeErrands";
+import Logistics from "../Components/Layouts/Logistics"
 import Contantform from "../Components/Layouts/Contantform";
 
 function Home() {
@@ -10,8 +11,9 @@ function Home() {
     <>
       <Hero />
       <HomeAbout />
-      <PersonalServices />
+      <PersonalErrands />
       <OfficeErrands />
+      <Logistics />
       <Contantform />
     </>
   );
