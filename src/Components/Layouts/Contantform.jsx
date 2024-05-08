@@ -45,7 +45,7 @@ function Contantform() {
           </Form.Group>
         </Form>
         <Button className="my-3" variant="primary">
-          MAKE A REQUEST
+          SEND MESSAGE
         </Button>{" "}
       </Container>
     </>

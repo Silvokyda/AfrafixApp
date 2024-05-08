@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
-*{
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
   font-family: Poppins, sans-serif;
 }
 .dropdown-title{
@@ -42,3 +46,25 @@ li:hover{
   height: 250px;
 }
 
+
+
+.Icons .cardIcons{
+  font-size: 100px;
+  padding: 20px 0;
+}
+
+/* contact page */
+.get-in-touch{
+  margin-top: 100px !important;
+  margin-left: 100px !important;
+}
+
+@media screen and (max-width: 960px) {
+  
+  .get-in-touch {
+    display: none !important;
+  }
+  .row-marg{
+    margin-left: 0 !important;
+  }
+}
