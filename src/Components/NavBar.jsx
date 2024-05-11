@@ -25,26 +25,26 @@ function NavBar() {
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             {/* Dropdown with clickable title */}
             <NavDropdown title={<Link to="/personal" className="dropdown-title">Personal Services</Link>} id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/personal/grocery-shop">Grocery shop</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/personal/personal-shopping">Personal shopping</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/personal/meat-poultry-shop">Meat|Poultry shop</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/personal/pharmacy-preps">Pharmacy Preps</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/grocery-shop">Grocery shop</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/personal-shopping">Personal shopping</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/meat-poultry-shop">Meat|Poultry shop</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/pharmacy-preps">Pharmacy Preps</NavDropdown.Item>
             </NavDropdown>
             {/* Dropdown with clickable title */}
             <NavDropdown title={<Link to="/office" className="dropdown-title">Office errands</Link>} id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/office/cheque-collection">Cheque collection and delivery</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/office/document-drop-pick-up">Document drop up and pick up</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/office/office-organization">Office organization</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/office/event-planning">Event planning</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/office/data-entry">Data entry</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/cheque-collection">Cheque collection and delivery</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/document-drop-pick-up">Document drop up and pick up</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/office-organization">Office organization</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/event-planning">Event planning</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/data-entry">Data entry</NavDropdown.Item>
             </NavDropdown>
             {/* Dropdown with clickable title */}
             <NavDropdown title={<Link to="/travel"className="dropdown-title">Travel Logistics</Link>} id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/travel/flight-scheduling">Flight Scheduling</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/travel/hotel-bookings">Hotel Bookings</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/travel/airport-transfers">Airport Transfers</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/travel/railway-transfers">Railway Transfers</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/travel/chauffeured-car-hire">Chauffeured car-hire</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/flight-scheduling">Flight Scheduling</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/hotel-bookings">Hotel Bookings</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/airport-transfers">Airport Transfers</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/railway-transfers">Railway Transfers</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/chauffeured-car-hire">Chauffeured car-hire</NavDropdown.Item>
             </NavDropdown>
             {/* Make the contact link clickable */}
             <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
