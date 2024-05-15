@@ -32,9 +32,9 @@ function NavBar() {
             </NavDropdown>
             {/* Dropdown with clickable title */}
             <NavDropdown title={<Link to="/office" className="dropdown-title">Office errands</Link>} id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/cheque-collection">Cheque collection and delivery</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/cheque-delivery">Cheque collection and delivery</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/document-drop-pick-up">Document drop up and pick up</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/office-organization">Office organization</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/office-decluttering">Office decluttering</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/event-planning">Event planning</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/data-entry">Data entry</NavDropdown.Item>
             </NavDropdown>
