@@ -1,3 +1,15 @@
+import CatalogData from '../../assets/CatalogDatajpg'
+import ImageDataEntry from '../../assets/ImageDataEntry.jpg'
+import OfflineDataEntry from '../../assets/OfflineDataEntry.jpg'
+import OnlineBills from '../../assets/OnlineBills.jpg'
+import OnlineDataCapture from '../../assets/OnlineDataCapture.jpg'
+import OnlineDataEntry from '../../assets/OnlineDataEntry.jpg'
+import PDFDataEntry from '../../assets/PDFDataEntry.jpg'
+import SurveyDataEntry from '../../assets/SurveyDataEntry.jpg'
+
+
+
+
 //////cheque collection and delivery
 
 export const ChequeHero= [
@@ -104,42 +116,42 @@ export const DataHero=[
 
 export const DataServices=[
   {
-    imgSrc: "",
+    imgSrc: OnlineDataEntry,
     Title: "Online Data Entry Services",
     descrip: "Ensure your ERP, CRM, and web servers, alongside other databases, stay current with outsourced online data entry services. Our adept team and digital tools provide state-of-the-art data entry for diverse online platforms, ensuring accuracy and cleanliness."
   },
   {
-    imgSrc: "",
+    imgSrc: OfflineDataEntry,
     Title: "Offline Data Entry Services",
     descrip: 'Transition to a "paperless" workplace with offline data entry services, converting handwritten documents, reports, records, invoices, survey data, and more into digital formats. With skilled professionals, relieve your teams of data management burdens.'
   },
   {
-    imgSrc: "",
+    imgSrc: CatalogData,
     Title: "Product/Catalog Data Entry Services",
     descrip: "Ensure your ecommerce business thrives with tailored product data entry services, accommodating diverse consumer segments and geographies. Key in crucial details swiftly and efficiently, including descriptions, SKUs, attributes, titles, prices, tax info, and shipping details."
   },
   {
-    imgSrc: "",
+    imgSrc: ImageDataEntry,
     Title: "Image Data Entry Services",
     descrip: "Maximize your image documents, files, and libraries, no matter their size, with our image data entry services. Partnering with a leading data outsourcing company ensures a custom database of accurately extracted details from various image formats like GIF, BMP, PDF, JPG, and more."
   },
   {
-    imgSrc: "",
+    imgSrc: PDFDataEntry,
     Title: "Documents & PDF Data Entry Services",
     descrip: "Effortlessly manage your PDF and document data with our PDF and data entry services. Utilizing cutting-edge methodologies and experienced professionals, we streamline data through text conversion and entry in your desired format with utmost accuracy and reliability."
   },
   {
-    imgSrc: "",
+    imgSrc: OnlineBills,
     Title: "Online Bills & Forms Data Entry Services",
     descrip: "Efficiently transition from manual to digital invoice handling with our online data entry services. Outsource to us for seamless invoice processing, covering a range of document formats. Benefit from enhanced operational efficiency with our adept handling of purchase orders, invoices, and proof of deliveries."
   },
   {
-    imgSrc: "",
+    imgSrc: OnlineDataCapture,
     Title: "Online Data Capture Services",
     descrip: "Enhance business efficiency with our online data capture services. We convert crucial documents into digitized formats for seamless integration with your databases and applications. Combining advanced technologies with manual validation ensures top-tier data accuracy and quality."
   },
   {
-    imgSrc: "",
+    imgSrc: SurveyDataEntry,
     Title: "Questionnaire/Survey Data Entry",
     descrip: "Optimize your survey initiatives with our questionnaires and surveys data entry services. We facilitate seamless data collection from survey forms, OMR codes, barcodes, etc., ensuring high accuracy, analysis, and comprehensive reporting. Empower your business to steer strategies effectively for maximum ROI."
   }
