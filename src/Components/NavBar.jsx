@@ -43,7 +43,7 @@ function NavBar() {
               <NavDropdown.Item as={Link} to="/flight-scheduling">Flight Scheduling</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/hotel-bookings">Hotel Bookings</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/airport-transfers">Airport Transfers</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/railway-transfers">Railway Transfers</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/SGR-transfers">SGR Railway Transfers</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/chauffeured-car-hire">Chauffeured car-hire</NavDropdown.Item>
             </NavDropdown>
             {/* Make the contact link clickable */}
