@@ -19,7 +19,7 @@ import Documents from "./pages/Documents";
 import OfficeDeclutter from "./pages/OfficeDeclutter";
 import EventPlan from "./pages/EventPlan";
 import DataEntry from "./pages/DataEntry";
-import FlightSchedule from "./pages/FlightSchedule";
+import FlightSchedule  from "./pages/FlightSchedule";
 import HotelBooking from "./pages/HotelBooking";
 import AirportTransfer from "./pages/AirportTransfer";
 import SgrTransfer from "./pages/SgrTransfer";

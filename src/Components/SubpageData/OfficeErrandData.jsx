@@ -1,11 +1,11 @@
-import CatalogData from '../../assets/CatalogDatajpg'
-import ImageDataEntry from '../../assets/ImageDataEntry.jpg'
-import OfflineDataEntry from '../../assets/OfflineDataEntry.jpg'
-import OnlineBills from '../../assets/OnlineBills.jpg'
-import OnlineDataCapture from '../../assets/OnlineDataCapture.jpg'
-import OnlineDataEntry from '../../assets/OnlineDataEntry.jpg'
-import PDFDataEntry from '../../assets/PDFDataEntry.jpg'
-import SurveyDataEntry from '../../assets/SurveyDataEntry.jpg'
+import catalogData from "../../assets/catalogData.jpg";
+import imageDataEntry from '../../assets/imageDataEntry.jpg';
+import offlineDataEntry from "../../assets/offlineDataEntry.jpg";
+import onlineBills from "../../assets/onlineBills.jpg";
+import onlineDataCapture from "../../assets/onlineDataCapture.jpg";
+import onlineDataEntry from "../../assets/onlineDataEntry.jpg";
+import pdfDataEntry from "../../assets/pdfDataEntry.jpg";
+import surveyDataEntry from "../../assets/surveyDataEntry.jpg"
 
 
 
@@ -22,7 +22,7 @@ export const ChequeHero= [
 
 export const ChequeServices=[
   {
-    imgSrc: "",
+    imgSrc: "https://images.pexels.com/photos/5900146/pexels-photo-5900146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     descrip1: "Fed up with the uncertainties of relying on delivery companies for cheque collection? You're not alone. Many share the frustration of misplaced cheques and lax verification processes, causing anxiety over payment security. But fear not! Our reliable cheque collection service in Kenya is designed to put your mind at ease.",
     descrip2: "With us, bid farewell to worries about lost cheques or unverified deliveries. We prioritize the safety of your payments, ensuring meticulous handling at every stage. Just let us know your collection needs, and we'll handle the rest. Whether it's same-day delivery or a specific schedule, we've got you covered. No more stressing or scrambling; our dedicated team handles the logistics, freeing you to focus on what truly matters. Don't delay—opt for a reliable and stress-free solution today!"
   }
@@ -116,42 +116,42 @@ export const DataHero=[
 
 export const DataServices=[
   {
-    imgSrc: OnlineDataEntry,
+    imgSrc: onlineDataEntry,
     Title: "Online Data Entry Services",
     descrip: "Ensure your ERP, CRM, and web servers, alongside other databases, stay current with outsourced online data entry services. Our adept team and digital tools provide state-of-the-art data entry for diverse online platforms, ensuring accuracy and cleanliness."
   },
   {
-    imgSrc: OfflineDataEntry,
+    imgSrc: offlineDataEntry,
     Title: "Offline Data Entry Services",
     descrip: 'Transition to a "paperless" workplace with offline data entry services, converting handwritten documents, reports, records, invoices, survey data, and more into digital formats. With skilled professionals, relieve your teams of data management burdens.'
   },
   {
-    imgSrc: CatalogData,
+    imgSrc: catalogData,
     Title: "Product/Catalog Data Entry Services",
     descrip: "Ensure your ecommerce business thrives with tailored product data entry services, accommodating diverse consumer segments and geographies. Key in crucial details swiftly and efficiently, including descriptions, SKUs, attributes, titles, prices, tax info, and shipping details."
   },
   {
-    imgSrc: ImageDataEntry,
+    imgSrc: imageDataEntry,
     Title: "Image Data Entry Services",
     descrip: "Maximize your image documents, files, and libraries, no matter their size, with our image data entry services. Partnering with a leading data outsourcing company ensures a custom database of accurately extracted details from various image formats like GIF, BMP, PDF, JPG, and more."
   },
   {
-    imgSrc: PDFDataEntry,
+    imgSrc: pdfDataEntry,
     Title: "Documents & PDF Data Entry Services",
     descrip: "Effortlessly manage your PDF and document data with our PDF and data entry services. Utilizing cutting-edge methodologies and experienced professionals, we streamline data through text conversion and entry in your desired format with utmost accuracy and reliability."
   },
   {
-    imgSrc: OnlineBills,
+    imgSrc: onlineBills,
     Title: "Online Bills & Forms Data Entry Services",
     descrip: "Efficiently transition from manual to digital invoice handling with our online data entry services. Outsource to us for seamless invoice processing, covering a range of document formats. Benefit from enhanced operational efficiency with our adept handling of purchase orders, invoices, and proof of deliveries."
   },
   {
-    imgSrc: OnlineDataCapture,
+    imgSrc: onlineDataCapture,
     Title: "Online Data Capture Services",
     descrip: "Enhance business efficiency with our online data capture services. We convert crucial documents into digitized formats for seamless integration with your databases and applications. Combining advanced technologies with manual validation ensures top-tier data accuracy and quality."
   },
   {
-    imgSrc: SurveyDataEntry,
+    imgSrc: surveyDataEntry,
     Title: "Questionnaire/Survey Data Entry",
     descrip: "Optimize your survey initiatives with our questionnaires and surveys data entry services. We facilitate seamless data collection from survey forms, OMR codes, barcodes, etc., ensuring high accuracy, analysis, and comprehensive reporting. Empower your business to steer strategies effectively for maximum ROI."
   }
