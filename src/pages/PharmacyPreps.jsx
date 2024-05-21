@@ -33,7 +33,7 @@ import Col from "react-bootstrap/Col";
       <Container>
         <Row>
           {AboutPrescription.map((item, index) => (
-            <Col lg={6} className="me-5 mt-5" key={index}>
+            <Col lg={6} className="me-5 mt-lg-5" key={index}>
               <p>{item.Descrip1}</p>
               <p>{item.Descrip2}</p>
             </Col>

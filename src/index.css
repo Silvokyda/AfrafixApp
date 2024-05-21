@@ -17,7 +17,7 @@ body{
 
 .heroimg{
   max-height: 560px;
-  filter: brightness(.5);
+  filter: brightness(.7);
 }
 .sliderimg{
   width: 100%;

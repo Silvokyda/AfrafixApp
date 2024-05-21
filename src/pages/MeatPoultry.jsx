@@ -19,8 +19,8 @@ function MeatPoultry() {
       <Container className="my-5">
         <Row>
           {Description.map((item, index) => (
-            <Col key={index}>
-              <div className="card text-center">
+            <Col md={6} lg={3} key={index}>
+              <div className="card text-center mb-3">
                 <div className="Icons">{item.imgIcon}</div>
                 <div className="card-body">
                   <h5 className="card-title">{item.Title}</h5>

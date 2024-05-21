@@ -35,7 +35,7 @@ export default function Grocery() {
       <Container>
         <Row>
           {OurProducts.map((item, index) => (
-            <Col key={index}>
+            <Col md={6} lg={4} key={index}>
               <div className="card mt-5 mx-2 mx-lg-3 border-0 card1">
                 <img
                   className="card-img-top p-1 img-fluid rounded img-width"
@@ -59,7 +59,7 @@ export default function Grocery() {
       <Container>
         <Row>
           {WhyUs.map((item, index) => (
-            <Col key={index}>
+            <Col md={6} lg={4} key={index}>
               <div className="card mt-5 mx-2 mx-lg-3 border-0 card1">
                 <img
                   className="card-img-top p-1 img-fluid rounded img-width"

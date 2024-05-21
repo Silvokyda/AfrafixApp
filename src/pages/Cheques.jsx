@@ -1,8 +1,11 @@
 import React from 'react'
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import {
   ChequeHero,
   ChequeServices
-} from "../Components/SubpageData/OfficeErrandData";
+} from "../Components/SubpageData/OfficeErrandData"
 
 function Cheques() {
   return (
@@ -29,12 +32,12 @@ function Cheques() {
       <Container>
         <Row>
           {ChequeServices.map((item, index) => (
-            <Col lg={6} className="me-5 mt-5" key={index}>
+            <Col lg={6} className="me-5 mt-lg-5" key={index}>
               <p>{item.descrip1}</p>
               <p>{item.descrip2}</p>
             </Col>
           ))}
-          {AboutPrescription.map((item, index) => (
+          {ChequeServices.map((item, index) => (
             <Col lg={4} className="my-3 my-lg-5" key={index}>
               <img src={item.imgSrc} alt="about image" className="img-fluid h-100 w-100" />
             </Col>
@@ -46,4 +49,4 @@ function Cheques() {
   )
 }
 
-export default Cheques
+export default Cheques;

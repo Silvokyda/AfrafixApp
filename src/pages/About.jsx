@@ -33,8 +33,8 @@ function About() {
       <Container className="mb-5">
         <Row>
           {GoalCards.map((item, index) => (
-            <Col key={index}>
-              <div className="card text-center">
+            <Col lg={4} key={index}>
+              <div className="card text-center mb-3">
                 <div className="Icons">{item.imgIcon}</div>
                 <div className="card-body">
                   <h3 className="card-title">{item.title}</h3>
@@ -53,7 +53,7 @@ function About() {
         <hr className="w-25 mt-3 mb-5 mx-auto border-3" />
         <Row>
           {Features.map((item, index) => (
-            <Col lg={4}  key={index}>
+            <Col md={6} lg={4}  key={index}>
               <div className="card text-center mb-3">
                 <div className="Icons">{item.imgIcon}</div>
                 <div className="card-body">

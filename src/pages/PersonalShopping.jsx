@@ -33,13 +33,13 @@ function PersonalShopping() {
       <Container>
         <Row>
           {PersonalShopInfor.map((item, index) => (
-            <Col lg={6} className="me-5" key={index}>
+            <Col lg={6} className="mt-lg-5 me-5" key={index}>
               <p>{item.Descrip1}</p>
               <p>{item.Descrip2}</p>
             </Col>
           ))}
           {PersonalShopInfor.map((item, index) => (
-            <Col lg={4} className="my-3 my-lg-5" key={index}>
+            <Col  className="my-3 my-lg-5" key={index}>
               <img src={item.imgSrc} alt="about image" className="img-fluid" />
             </Col>
           ))}
