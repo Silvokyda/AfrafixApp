@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {
   DataHero,
-  DataServices
+  DataServices,
 } from "../Components/SubpageData/OfficeErrandData";
 
 function DataEntry() {
@@ -30,7 +30,7 @@ function DataEntry() {
       <Container>
         <Row>
           {DataServices.map((item, index) => (
-            <Col md={6} lg={3}key={index}>
+            <Col md={6} lg={3} key={index}>
               <div className="card mt-lg-5 mx-2 mx-lg-3 border-0 card1">
                 <img
                   className="card-img-top p-1 img-fluid rounded img-width"

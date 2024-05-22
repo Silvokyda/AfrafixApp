@@ -1,17 +1,17 @@
-import React from 'react'
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {
   ChequeHero,
-  ChequeServices
-} from "../Components/SubpageData/OfficeErrandData"
+  ChequeServices,
+} from "../Components/SubpageData/OfficeErrandData";
 
 function Cheques() {
   return (
     <>
-    {/*hero */}
-    <div className="position-relative w-100 hero">
+      {/*hero */}
+      <div className="position-relative w-100 hero">
         {ChequeHero.map((item, index) => (
           <div key={index}>
             <img
@@ -39,14 +39,17 @@ function Cheques() {
           ))}
           {ChequeServices.map((item, index) => (
             <Col lg={4} className="my-3 my-lg-5" key={index}>
-              <img src={item.imgSrc} alt="about image" className="img-fluid h-100 w-100" />
+              <img
+                src={item.imgSrc}
+                alt="about image"
+                className="img-fluid h-100 w-100"
+              />
             </Col>
           ))}
         </Row>
       </Container>
-    
     </>
-  )
+  );
 }
 
 export default Cheques;

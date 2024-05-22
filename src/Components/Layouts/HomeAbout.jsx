@@ -13,21 +13,18 @@ export default function HomeAbout() {
         <h4 className="text-center mt-3 mt-lg-5">Reasons To Choose Us</h4>
         <hr className="w-25 my-3 mx-auto border-3" />
       </Row>
-      <Row >
+      <Row>
         <Col lg={4} className="me-5">
           <h5>Why Afrafix Ventures?</h5>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
-            quae quidem eum sunt natus autem, veniam hic blanditiis repellat,
-            illum maxime temporibus voluptatem, nihil eaque quia pariatur ad
-            voluptatum! Dolore modi blanditiis impedit, sed doloribus, voluptas
-            atque eius illo, fuga reprehenderit rerum natus aperiam corporis est
-            repellendus veritatis quia nam. Sequi tenetur placeat labore a iusto
-            consectetur at distinctio adipisci aliquam odio error, officia nemo
-            illo, facilis reiciendis, esse autem similique dolores. Sunt
-            dignissimos tempore voluptate eligendi? Ipsa, magnam totam! Aperiam
-            nihil facere enim, harum dolores eveniet maxime similique illum
-            veniam debitis amet ratione! Ut esse hic quo aspernatur ducimus.
+            Afrafix Ventures is your one-stop shop for getting things done.
+            Imagine the freedom of a to-do list that magically completes itself!
+            Not battling traffic for errands. No more scrambling to remember
+            appointments. Just you, focusing on what matters most, while we take
+            care of the rest. We're your friendly errand ninjas, tackling
+            everything from grocery shopping and personal errands to travel
+            bookings and office organization. Here's how we make life easier for
+            busy individuals and corporations.
           </p>
         </Col>
         <Col lg={6} className="my-3 my-lg-5 ">

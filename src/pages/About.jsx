@@ -1,11 +1,16 @@
-import React from "react";
-import { HeroData, GoalCards, Features } from "../Components/AboutApi";
+import React, { useState } from "react";
+import { HeroData, GoalCards, Features, AboutUs } from "../Components/AboutApi";
 import { Container } from "react-bootstrap";
-import HomeAbout from "../Components/Layouts/HomeAbout";
+import SliderAbout from "../Components/SliderAbout";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Collapse from "react-bootstrap/Collapse";
 
 function About() {
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       {/*hero */}
@@ -26,7 +31,42 @@ function About() {
 
       {/*introduction about about us section */}
 
-      <HomeAbout />
+      <Container className="mb-3 mb-lg-5 mx-auto">
+        <Row>
+          {AboutUs.map((item, index) => (
+            <Col key={index}>
+              <h4 className="mt-3 mt-lg-5">{item.title1}</h4>
+              <p>{item.descrip1}</p>
+              <ul>
+                {item.List1.map((list, index) => (
+                  <li key={index}>{list}</li>
+                ))}
+              </ul>
+              <Button
+                onClick={() => setOpen(!open)}
+                aria-controls="read-more-btn"
+                aria-expanded={open}
+              >
+                Read More
+              </Button>
+              <Collapse in={open}>
+                <div id="read-more-btn">
+                  <h5>{item.title2}</h5>
+                  <p>{item.descrip2}</p>
+                  <ul>
+                    {item.List2.map((list, index) => (
+                      <li key={index}>{list}</li>
+                    ))}
+                  </ul>
+                </div>
+              </Collapse>
+            </Col>
+          ))}
+          <Col lg={4} className="my-3 my-lg-5 ">
+            <SliderAbout />
+          </Col>
+        </Row>
+      </Container>
 
       {/* about our mission, vision and values section */}
 
@@ -53,7 +93,7 @@ function About() {
         <hr className="w-25 mt-3 mb-5 mx-auto border-3" />
         <Row>
           {Features.map((item, index) => (
-            <Col md={6} lg={4}  key={index}>
+            <Col md={6} lg={4} key={index}>
               <div className="card text-center mb-3">
                 <div className="Icons">{item.imgIcon}</div>
                 <div className="card-body">
@@ -64,7 +104,6 @@ function About() {
             </Col>
           ))}
         </Row>
-        
       </Container>
     </>
   );

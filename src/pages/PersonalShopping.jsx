@@ -39,7 +39,7 @@ function PersonalShopping() {
             </Col>
           ))}
           {PersonalShopInfor.map((item, index) => (
-            <Col  className="my-3 my-lg-5" key={index}>
+            <Col className="my-3 my-lg-5" key={index}>
               <img src={item.imgSrc} alt="about image" className="img-fluid" />
             </Col>
           ))}

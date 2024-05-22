@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -10,8 +10,8 @@ import {
 function OfficeDeclutter() {
   return (
     <>
-     {/*hero */}
-     <div className="position-relative w-100 hero">
+      {/*hero */}
+      <div className="position-relative w-100 hero">
         {DeclutterHero.map((item, index) => (
           <div key={index}>
             <img
@@ -49,10 +49,8 @@ function OfficeDeclutter() {
           ))}
         </Row>
       </Container>
-    
-    
     </>
-  )
+  );
 }
 
-export default OfficeDeclutter
+export default OfficeDeclutter;
