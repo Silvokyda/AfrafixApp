@@ -7,6 +7,7 @@ import "../../index.css";
 import Slider from "react-slick";
 import { useRef } from "react";
 import Button from "react-bootstrap/Button";
+import RequestForm from "../../Components/Forms/RequestForm"
 
 function OfficeErrands() {
   let sliderRef = useRef(null);
@@ -61,9 +62,7 @@ function OfficeErrands() {
                   <div className="card-body">
                     <h6 className="card-title">{values.title}</h6>
                     <p className="card-text">{values.descrip}</p>
-                    <Button className="my-3" variant="primary">
-                      MAKE A REQUEST
-                    </Button>{" "}
+                    <RequestForm />
                   </div>
                 </div>
               </Col>

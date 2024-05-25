@@ -6,7 +6,6 @@ import LogisticData from "../LogisticApi";
 import "../../index.css";
 import { useRef } from "react";
 import Slider from "react-slick";
-import Button from "react-bootstrap/Button";
 
 function Logistics() {
   let sliderRef = useRef(null);
@@ -61,9 +60,7 @@ function Logistics() {
                   <div className="card-body">
                     <h6 className="card-title">{item.title}</h6>
                     <p className="card-text">{item.descrip}</p>
-                    <Button className="my-3" variant="primary">
-                      MAKE A REQUEST
-                    </Button>{" "}
+                    {item.Btns}
                   </div>
                 </div>
               </Col>

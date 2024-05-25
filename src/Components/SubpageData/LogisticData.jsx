@@ -14,7 +14,10 @@ import FlightTakeoffOutlinedIcon from '@mui/icons-material/FlightTakeoffOutlined
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined';
 import HotelOutlinedIcon from '@mui/icons-material/HotelOutlined';
-import sgr from '../../assets/sgr.jpg'
+import sgr from '../../assets/sgr.jpg';
+
+
+
 
 export const FlightHero=[
   {
