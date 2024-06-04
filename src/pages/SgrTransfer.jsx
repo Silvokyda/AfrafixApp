@@ -2,6 +2,7 @@ import React from 'react'
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import '../Components/Styles/logistics.css'
 import {
   Sgr,
   Benefits,
@@ -30,14 +31,14 @@ function SgrTransfer() {
       {/*why choose us*/}
       <h4 className="text-center mt-3 mt-lg-5">Why Choose Us?</h4>
       <hr className="w-25 my-3 mx-auto border-3" />
-      <Container className="mb-5">
+      <Container fluid className="mb-5 bg">
         <Row>
           {Benefits.map((item, index) => (
-            <Col md={6} lg={3} key={index}>
-              <div className="card text-center mb-4">
-                <div className="Icons">{item.Icon}</div>
+            <Col md={6} lg={3} key={index} className='cards mx-auto'>
+              <div className="card text-center mb-1 transfer-card p-3 ">
+                <div className="Icons card-Icons">{item.Icon}</div>
                 <div className="card-body">
-                  <h6 className="card-title">{item.title}</h6>
+                  <h5 className="card-title">{item.title}</h5>
                   <p className="card-text">{item.text}</p>
                 </div>
               </div>
@@ -46,21 +47,21 @@ function SgrTransfer() {
         </Row>
       </Container>
       {/*why choose us*/}
-      <h4 className="text-center mt-3 mt-lg-5">Why Choose Us?</h4>
+      <h4 className="text-center mt-3 mt-lg-5">Our Vehicles</h4>
       <hr className="w-25 my-3 mx-auto border-3" />
       <Container className="mb-5">
         <Row>
           {VehiclesType.map((item, index) => (
             <Col md={6} lg={3} key={index}>
-              <div className="card text-center mb-4">
+              <div className="card text-center mb-4 card-height">
                 <img
                   className="card-img-top p-1 img-fluid rounded img-width"
                   src={item.imgSrc}
                   alt="card image"
                 />
                 <div className="card-body text-start">
-                  <h6 className="card-title">{item.carTyppe}</h6>
-                  <ul>
+                  <h5 className="card-title text-title">{item.carTyppe}</h5>
+                  <ul className='decoration-none text-list'>
                     {item.List.map((list, index) => (
                       <li key={index}>{list}</li>
                     ))}

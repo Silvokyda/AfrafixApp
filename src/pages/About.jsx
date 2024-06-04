@@ -46,6 +46,7 @@ function About() {
                 onClick={() => setOpen(!open)}
                 aria-controls="read-more-btn"
                 aria-expanded={open}
+                className="mb-3"
               >
                 Read More
               </Button>

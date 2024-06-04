@@ -1,0 +1,50 @@
+/****sgrtransfer****/
+
+.bg{
+  position: relative;
+  background-color:rgba(46, 36, 36, 0.7);
+  filter: brightness(.8);
+  
+}
+.cards{
+ margin-top: 50px;
+ margin-bottom: 50px;
+ 
+}
+
+div .transfer-card{
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+div .transfer-card:hover{
+  background-color: aquamarine;
+  transform: scale(0.96);
+  
+}
+
+@media screen and (max-width: 960px) {
+  .cards{
+    margin-top: 10px;
+    margin-bottom: 10px;
+   }
+}
+.card-Icons{
+  width: 50px;
+  height: 50px;
+  align-content: center;
+  align-self: center;
+  border-radius: 50%;
+  background-color: aqua;
+}
+.card-height{
+  height: 430px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+.card-height:hover{
+  background-color: aquamarine;
+  transform: scale(.9);
+}
+.text-list{
+  font-size: 14px;
+}

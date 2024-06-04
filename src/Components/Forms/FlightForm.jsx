@@ -7,9 +7,14 @@ import Modal from "react-bootstrap/Modal";
 
 function FlightForm(props) {
   const [show, setShow] = useState(false);
+  const [tripType, setTripType] = useState("roundtrip");
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const handleTripTypeChange = (event) => {
+    setTripType(event.target.id);
+  };
 
   return (
     <>
@@ -26,75 +31,105 @@ function FlightForm(props) {
         onHide={handleClose}
       >
         <Modal.Header closeButton className="bg-success">
-          <Modal.Title className="">Let's us do your flight schedule</Modal.Title>
+          <Modal.Title className="">
+            Let's us do your flight schedule
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body className="bg-success">
           <Form>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridfName">
-                <Form.Label>First Name<span className="required text-danger">*</span>{" "}</Form.Label>
-                <Form.Control type="text" placeholder="Enter First Name" required />
+                <Form.Label>
+                  First Name<span className="required text-danger">*</span>{" "}
+                </Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter First Name"
+                  required
+                />
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridlName">
-                <Form.Label>Last Name<span className="required text-danger">*</span>{" "}</Form.Label>
-                <Form.Control type="text" placeholder="Enter Last Name" required />
+                <Form.Label>
+                  Last Name<span className="required text-danger">*</span>{" "}
+                </Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter Last Name"
+                  required
+                />
               </Form.Group>
             </Row>
 
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridEmail">
-                <Form.Label>Trip From<span className="required text-danger">*</span>{" "}</Form.Label>
+                <Form.Label>
+                  Trip From<span className="required text-danger">*</span>{" "}
+                </Form.Label>
                 <Form.Control type="text" placeholder="From" required />
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridPhone">
-              <Form.Label>
-                Trip To<span className="required text-danger">*</span>{" "}
-              </Form.Label>
-              <Form.Control type="text" placeholder="To" required />
+                <Form.Label>
+                  Trip To<span className="required text-danger">*</span>{" "}
+                </Form.Label>
+                <Form.Control type="text" placeholder="To" required />
               </Form.Group>
             </Row>
 
-             <Row className="mb-3">
-              <Form.Group as={Col} controlId="formGridfdate">
-              <Form.Check type="radio" id="roundtrip" name="tripType" label="Roundtrip" defaultChecked 
-              />
+            <Row className="mb-3">
+              <Form.Group as={Col} controlId="roundtrip">
+                <Form.Check
+                  type="radio"
+                  id="roundtrip"
+                  name="tripType"
+                  label="Roundtrip"
+                  checked={tripType === "roundtrip"}
+                  onChange={handleTripTypeChange}
+                />
               </Form.Group>
-              <Form.Group as={Col} controlId="formGridtime">
-              <Form.Check type="radio" id="oneway" name="tripType" label="Oneway"
-              />
+              <Form.Group as={Col} controlId="oneway">
+                <Form.Check
+                  type="radio"
+                  id="oneway"
+                  name="tripType"
+                  label="Oneway"
+                  checked={tripType === "oneway"}
+                  onChange={handleTripTypeChange}
+                />
               </Form.Group>
             </Row>
 
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridfdate">
-                <Form.Label>Departure<span className="required text-danger">*</span>{" "}</Form.Label>
-                <Form.Control type="datetime-local"  required />
+                <Form.Label>
+                  Departure<span className="required text-danger">*</span>{" "}
+                </Form.Label>
+                <Form.Control type="datetime-local" required />
               </Form.Group>
 
-              <Form.Group as={Col} controlId="formGridtime">
-                <Form.Label>Return</Form.Label>
-                <Form.Control type="datetime-local" />
-              </Form.Group>
+              {tripType === "roundtrip" && (
+                <Form.Group as={Col} controlId="formGridtime">
+                  <Form.Label>Return</Form.Label>
+                  <Form.Control type="datetime-local" />
+                </Form.Group>
+              )}
             </Row>
-
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridCity">
                 <Form.Label>Adults(12+)</Form.Label>
-                <Form.Control type="number"  min={1} max={10} placeholder="0"/>
+                <Form.Control type="number" min={1} max={10} placeholder="0" />
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridCity">
                 <Form.Label>Children(2-11) </Form.Label>
-                <Form.Control type="number"  min={1} max={10} placeholder="0"/>
+                <Form.Control type="number" min={1} max={10} placeholder="0" />
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridCity">
                 <Form.Label>Infants(0-1)</Form.Label>
-                <Form.Control type="number"  min={1} max={5} placeholder="0"/>
+                <Form.Control type="number" min={1} max={5} placeholder="0" />
               </Form.Group>
-
             </Row>
 
             <Button variant="primary" type="submit">

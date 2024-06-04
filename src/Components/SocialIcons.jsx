@@ -10,11 +10,10 @@ function SocialIcons() {
   return (
     <>
     <ul className="list-unstyled d-flex my-4">
-      <a href='#' className="me-3 text-decoration-none"><li><XIcon /></li></a>
-      <a href='#'className="me-3 text-decoration-none"><li><FacebookIcon /></li></a>
-      <a href='#'className="me-3 text-decoration-none"><li><InstagramIcon /></li></a>
-      <a href='#'className="me-3 text-decoration-none"><li><LinkedInIcon /></li></a>
-
+      <li><a href='#' className="me-3 footer-icons text-decoration-none" alt="X-icon" ><XIcon /></a></li>
+      <li><a href='#' className="me-3 footer-icons text-decoration-none" alt="facebook-icon" ><FacebookIcon /></a></li>
+      <li><a href='#' className="me-3 footer-icons text-decoration-none" alt="instagram-icon" ><InstagramIcon /></a></li>
+      <li><a href='#' className="me-3 footer-icons text-decoration-none" alt="linkedin-icon" ><LinkedInIcon /></a></li>
     </ul>
     
     </>
