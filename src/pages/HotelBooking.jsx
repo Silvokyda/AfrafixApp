@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Hotel, HotelCards } from "../Components/SubpageData/LogisticData";
+import '../Components/Styles/styles.css';
 
 function HotelBooking() {
   return (
@@ -29,9 +30,9 @@ function HotelBooking() {
       <Container className="mb-5">
         <Row>
           {HotelCards.map((item, index) => (
-            <Col md={6} lg={3} key={index}>
-              <div className="card text-center mb-4">
-                <div className="Icons">{item.Icon}</div>
+            <Col md={6} lg={3} key={index}className='cards'>
+              <div className="card text-center mb-4 transfer-card p-3 small-card-height">
+                <div className="Icons card-Icons bg-size">{item.Icon}</div>
                 <div className="card-body">
                   <p className="card-text">{item.text}</p>
                 </div>

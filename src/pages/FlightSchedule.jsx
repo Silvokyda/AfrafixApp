@@ -7,6 +7,7 @@ import {
   FlightCards,
   SkyVideo,
 } from "../Components/SubpageData/LogisticData";
+import '../Components/Styles/styles.css'
 
 function FlightSchedule() {
   return (
@@ -33,9 +34,9 @@ function FlightSchedule() {
       <Container className="mb-5">
         <Row>
           {FlightCards.map((item, index) => (
-            <Col md={6} lg={3} key={index}>
-              <div className="card text-center mb-4">
-                <div className="Icons">{item.Icon}</div>
+            <Col md={6} lg={3} key={index} className='cards'>
+              <div className="card text-center transfer-card small-card-height p-3 mb-4">
+                <div className="Icons card-Icons bg-size">{item.Icon}</div>
                 <div className="card-body">
                   <p className="card-text">{item.text}</p>
                 </div>

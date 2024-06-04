@@ -2,14 +2,13 @@
 
 .bg{
   position: relative;
-  background-color:rgba(46, 36, 36, 0.7);
+  background-color: #f5b6b94d;
   filter: brightness(.8);
   
 }
 .cards{
  margin-top: 50px;
  margin-bottom: 50px;
- 
 }
 
 div .transfer-card{
@@ -47,4 +46,21 @@ div .transfer-card:hover{
 }
 .text-list{
   font-size: 14px;
+}
+
+.small-card-height{
+  height: 220px;
+  background-color: #f5b6b94d;
+}
+.bg-size{
+  width: 35px;
+  height: 35px;
+}
+
+.bg-success{
+  background-color: #f5b6b94d !important;
+}
+
+.about-card{
+  background-color: #f5b6b94d;
 }

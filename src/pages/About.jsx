@@ -7,6 +7,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Collapse from "react-bootstrap/Collapse";
+import '../Components/Styles/styles.css'
 
 function About() {
   const [open, setOpen] = useState(false);
@@ -75,7 +76,7 @@ function About() {
         <Row>
           {GoalCards.map((item, index) => (
             <Col lg={4} key={index}>
-              <div className="card text-center mb-3">
+              <div className="card text-center mb-3 transfer-card about-card">
                 <div className="Icons">{item.imgIcon}</div>
                 <div className="card-body">
                   <h3 className="card-title">{item.title}</h3>
@@ -95,7 +96,7 @@ function About() {
         <Row>
           {Features.map((item, index) => (
             <Col md={6} lg={4} key={index}>
-              <div className="card text-center mb-3">
+              <div className="card text-center mb-3 transfer-card about-card">
                 <div className="Icons">{item.imgIcon}</div>
                 <div className="card-body">
                   <h5 className="card-title">{item.title}</h5>

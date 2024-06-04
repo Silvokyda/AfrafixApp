@@ -47,9 +47,7 @@ body{
 .list-footer:hover{
   color: aqua;
 }
-.footer-icons{
-  
-}
+
 .footer-icons:hover{
   color: aqua;
 }
@@ -63,6 +61,7 @@ body{
 .Icons .cardIcons{
   font-size: 100px;
   padding: 20px 0;
+  color: rgb(7, 202, 202);
 }
 
 /* contact page */
